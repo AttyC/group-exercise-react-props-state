@@ -27,18 +27,16 @@ function App() {
 	}])
 
 	return (
-		<div className="App">
+    <div className='App'>
+      <h1>React props and state</h1>
+      <ChuckCard greeting={chuckGreeting} />
 
-			<h1>React props and state</h1>
-			<ChuckCard />
+      <h2>Chuck Info: </h2>
+      <ChuckInfo />
 
-			<h2>Chuck Info: </h2>
-			<ChuckInfo />
-
-			<h2>Jokes: </h2>
-
-		</div>
-	);
+      <h2>Jokes: </h2>
+    </div>
+  );
 }
 
 export default App;
