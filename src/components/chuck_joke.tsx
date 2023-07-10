@@ -7,7 +7,7 @@ interface ChuckJokeProps {
 const ChuckJoke: React.FC<ChuckJokeProps> = ({ jokes }) => (
   <ul>
     {jokes.map((joke: Joke) => (
-      <li>😆 {joke.joke}</li>
+      <li key={joke.id}>😆 {joke.joke}</li>
     ))}
   </ul>
 );
